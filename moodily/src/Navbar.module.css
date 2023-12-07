@@ -1,0 +1,50 @@
+.container {
+    flex: 0 0 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 100vh;
+    padding: 48px 32px;
+    border-right: rgba(0, 0, 0, 0.3) 1px solid;
+}
+
+.container > img {
+    height: 160px;
+    margin-bottom: 12px;
+}
+
+.container > h1 {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: black;
+}
+
+.container > p {
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.container > button {
+    font-size: 1.25em;
+}
+
+.container > button:not(:last-child) {
+    width: 100%;
+    margin-bottom: 12px;
+    border: none;
+    transition: background-color 0.25s;
+}
+
+.container > button:not(:last-child):hover {
+    background-color: rgba(255, 154, 121, 0.8);
+}
+
+.container > button:last-child {
+    margin-top: auto;
+    width: 160px;
+}
+
+.orange {
+    background-color: #ff9a79;
+}

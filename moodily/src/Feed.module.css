@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.feed {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    padding: 32px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #ff9a79;
+}
+
+.post > button {
+    width: 100px;
+    padding: 0.25em;
+    border: black 2px solid;
+    background-color: #ffe1d7;
+    font-size: 1.25em;
+}
+
+.comment {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    padding: 16px;
+    border: 4px solid #ff9a79;
+    border-radius: 20px;
+    background-color: #ffe1d7;
+}
+
+.comment > img {
+    width: 80px;
+    height: 80px;
+}
+
+.comment > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.comment > div > div {
+    display: flex;
+    gap: 12px;
+}
+
+.comment > div > div > p {
+    font-size: 1.1em;
+}
+
+.right {
+    flex: 0 0 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 260px;
+    padding: 32px 32px 48px 0px;
+}
+
+.right > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+    border: #ff9a79 4px solid;
+    border-radius: 24px;
+    background-color: rgba(255, 154, 121, 0.5);
+}
+
+.right > div > p {
+    margin-bottom: 8px;
+    word-break: break-all;
+}
+
+.right > button {
+    font-size: 1.25em;
+    border-bottom-right-radius: 0px;
+    background-color: #ff9a79;
+}
