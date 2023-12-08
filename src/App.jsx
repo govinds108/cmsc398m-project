@@ -5,7 +5,9 @@ import Profile from "./Profile";
 
 const App = () => {
     return (
-        <HashRouter>
+        <HashRouter
+            basename={import.meta.env.DEV ? "/" : "/cmsc398m-project/"}
+        >
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/feed" element={<Feed />} />
